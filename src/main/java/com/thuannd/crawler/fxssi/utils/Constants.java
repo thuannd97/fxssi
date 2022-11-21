@@ -18,5 +18,6 @@ public class Constants {
     public static final String CREATED_DATE = "createdDate";
     public static final String SERVER_TIME = "server_time";
     public static final String ID = "id";
+    public static final String TEMP_FOLDER = "/temp";
 
 }
