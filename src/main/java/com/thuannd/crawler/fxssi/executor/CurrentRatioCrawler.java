@@ -16,7 +16,7 @@ public class CurrentRatioCrawler extends ExecutorJob {
 
     @Autowired
     public CurrentRatioCrawler(FxssiClient fxssiClient, CurrentRatioFacade currentRatioFacade) {
-        super(1);
+        super(5 * 60);
         this.fxssiClient = fxssiClient;
         this.currentRatioFacade = currentRatioFacade;
     }
