@@ -7,12 +7,13 @@ import com.thuannd.crawler.fxssi.model.SearchCurrentRatioRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/current-ratio")
+@RequestMapping("/api/current-ratio")
 public interface CurrentRatioAPI {
 
     @PostMapping
     void add(@RequestBody CurrentRatio currentRatio);
 
+    @GetMapping("/search")
     Page<CurrentRatioResponse> search(@ModelAttribute SearchCurrentRatioRequest req);
 
 }

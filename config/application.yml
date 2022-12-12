@@ -8,8 +8,19 @@ spring:
   data:
     solr:
       host: http://localhost:8983/
+  mvc:
+    view:
+      prefix: /view/
+      suffix: .html
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  thymeleaf:
+    cache: false
 
 fxssi:
+  enable: false
   url: https://c.fxssi.com/api/current-ratios?filter=EURJPY&rand=0.7258719181490203&user_id=0
 
 logging:
